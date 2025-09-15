@@ -25,7 +25,15 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='home'),
+    path('', views.home, name='homepage'),
+    path('about/', views.aboutpage, name='aboutpage'),
+    path('contact/', views.contactpage, name='contactpage'),
+    path('projects/', views.allprojects, name='allprojects'),
+    path('add/', views.addpage, name='addpage'),
+    path('login/', views.userlogin, name='userlogin'),
+    path('logout/', views.userlogout, name='userlogout'),
+    path('signup/', views.usersignup, name='usersignup'),
+
 ]
 
 
