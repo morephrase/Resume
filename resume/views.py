@@ -77,7 +77,7 @@ def addpage(request):
 # ---------------------------
 def userlogin(request):
     """Optional: use built-in LoginView"""
-    return auth_views.LoginView.as_view(template_name='main/login.html')(request)
+    return auth_views.LoginView.as_view(template_name='login.html')(request)
 def contactpage(request):
     if request.method == "POST":
         name = request.POST.get("name")
